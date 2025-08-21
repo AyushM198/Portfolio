@@ -1,0 +1,157 @@
+/* Mobile-first responsive styles to fix black space issues */
+
+/* Base mobile styles */
+@media (max-width: 768px) {
+  /* Hero component fixes */
+  .hero-container {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  /* Projects component fixes */
+  .projects-container {
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 1rem 0;
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  /* About section fixes */
+  .about-container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Navbar fixes */
+  .navbar-container {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* General fixes */
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Background fixes */
+  .bg-cover-mobile {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  /* Typography fixes */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Button fixes */
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0.5rem auto;
+  }
+
+  /* Grid fixes */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Flex fixes */
+  .flex-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-container {
+    padding: 2rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .project-card {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* Large screen styles */
+@media (min-width: 1025px) {
+  .hero-container {
+    padding: 3rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+}

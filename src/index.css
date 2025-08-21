@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Henny+Penny&family=Iceberg&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+
+
+@import "tailwindcss";
+
+html, body {
+  font-family: 'Bitcount+Single', 'Raleway', 'Noto Sans Japanese', sans-serif,HennyPenny;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+@theme {
+  --font-Raleway: "Raleway", sans-serif; 
+  --font-Noto: "Noto Sans JP", sans-serif;
+  --font-Playfair+Display: "Playfair Display", serif; 
+  --font-Triodion: "Triodion", sans-serif; 
+  --font-Iceberg: "Iceberg", sans-serif;
+  --font-Sansation: "Sansation", sans-serif;
+  --fony-HennyPenny: "Henny Penny", system-ui;
+}
+.henny-penny-regular {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+/* styles.css */
+.clip-custom-rounded {
+  clip-path: path("M 10,20 L 60,20 A 10,10 0,0,0  70,10 L 70,10 A 10,10 0,0,1 80,0 L 140,0 A 10,10 0,0,1 150,10 L 150,190 A 10,10 0,0, 1 140,200 L 10,200 A 10,10 0,0,1 0,190 L 0,30 A 10,10 0,0,1 10,20 Z ");
+}
+
+.clip-custom-right {
+  clip-path: path("M 20,0 L 360,0 A 20,20 0 0 1 380,20 L 380,50 A 50,50 0 0 0 430,100 L 520,100 A 20,20 0 0 1 540,120 L 540,380 A 20,20 0 0 1 520,400 L 20,400 A 20,20 0 0 1 0,380 L 0,20 A 20,20 0 0 1 20,0 Z");
+}
+.clip-custom-top{
+  clip-path: path("M 20,0 L 520,0 A 20,20 0 0 1 540,20  L 540,300 A 50,50 0 0 1 500,345 L 440,345 A 45,45 0 0 1 388,300 L 388,280 A 30,30 0 0 0 360,250 L 20,250 A 20,20 0 0 1 0,230 L 0,20 A 20,20 0 0 1 20,0 Z");
+}
+
+.div6 {
+clip-path: path("M 20,0 L 520,0 A 20,20 0 0 1 540,20 L 540,420 A 20,20 0 0 1 520,440 L 440,440 A 20,20 0 0 0 420,460 L 420,480 A 30,30 0 0 1 380,506 L 20,540 A 20,20 0 0 0 0,520 L 0,20 A 20,20 0 0 1 20,0 Z");
+
+}
+
+/* .clip-leftbox: {
+          clipPath: path("M0,0 H100% V95% Q90%,100% 80%,100% H0 Z")
+        },
+        
+        .clip-centerbox: {
+          clipPath: path("M0,0 H100% V100% H0 Z")
+        },
+        .clip-rightbox: {
+          clipPath: path("M0,0 H100% V85% Q100%,100% 85%,100% H0 Z")
+        },
+        .clip-glassmorph: {
+          clipPath: path("M0,0 H100% V85% Q100%,100% 85%,100% H0 Z")
+        }, */
