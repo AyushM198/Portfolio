@@ -12,6 +12,9 @@ import Door from './components/Door.jsx'
 import AboutPage from './components/AboutMe.jsx'
 import Projects from './components/Projects.jsx'
 import TreasureMap from './components/try.jsx'
+import Services from './components/Service.jsx'
+import Last from './components/Last.jsx'
+import Footer from './components/Footer.jsx'
 
 
 
@@ -23,12 +26,16 @@ const router = createBrowserRouter(
       <Route index element={
           <>
             <Hero />
-            <AboutPage />
+            <Services />
             <Projects />
+            {/* <Last /> */}
+            <AboutPage />
             {/* <TreasureMap /> */}
-            <Expertise />
+            {/* <Expertise /> */}
             {/* <GridLayout /> */}
-            <Door />
+            <Footer />
+            {/* <Door /> */}
+            
           </>
           }
           />

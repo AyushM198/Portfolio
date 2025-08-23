@@ -8,7 +8,7 @@ const Expertise = () => {
     gsap.registerPlugin(MotionPathPlugin);
 
     const flyingImgRef = useRef();
-
+    
     useEffect(() => {
         gsap.to(flyingImgRef.current, {
             duration: 6,
@@ -32,7 +32,7 @@ const Expertise = () => {
 
 
     return (
-        <section className="relative bg-[#EDEDED] py-20 px-4 md:px-10 lg:px-20 font-sans">
+        <section className="relative bg-[#f7f6f4] py-20 px-4 md:px-10 lg:px-20 font-sans">
             {/* Heading */}
             <div className="text-center mb-20">
                 <p className="text-xl uppercase tracking-wider mb-4 font-medium">Innovative</p>
@@ -43,7 +43,7 @@ const Expertise = () => {
             </div>
 
             {/* Floating PNG animation */}
-            <div className="absolute top-0 left-0 z-50 pointer-events-none">
+            <div className="absolute top-0 left-0 z-50  pointer-events-none">
                 <img
                     ref={flyingImgRef}
                     src="/img/react.png" // Replace with your PNG path

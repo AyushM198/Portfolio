@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative min-h-screen flex flex-col items-center justify-center px-8"
+      className="relative lg:min-h-dvh md:h-dvh flex flex-col items-center justify-center px-8 p-20 "
       style={{
         backgroundImage: "url('/img/paper_bg.png')",
         backgroundSize: "cover",
@@ -16,10 +16,10 @@ const Hero = () => {
       }}
     >
       {/* Main content */}
-      <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between w-full max-w-5xl z-10">
+      <div className="relative  flex flex-col md:flex-row items-start md:items-center justify-between w-full max-w-5xl z-10 md:-mt-20 ">
         {/* Left Section */}
-        <div ref={textRef} className="max-w-lg">
-          <p className="text-2xl text-gray-900 mb-2">Hi, I’m</p>
+        <div ref={textRef} className="max-w-lg ">
+          <p className="text-2xl text-gray-900 mb-2 ">Hi, I’m</p>
           <h1
             className="text-6xl md:text-7xl mb-4 text-black"
             style={{ fontFamily: "'Patrick Hand', cursive" }}
@@ -36,7 +36,7 @@ const Hero = () => {
           ref={notesRef}
           className="flex flex-col items-start mt-8 md:mt-0 gap-4"
         >
-          <div className="bg-yellow-300 p-3 rounded shadow rotate-[-3deg]">
+          <div className="bg-yellow-300 p-3 rounded shadow rotate-[-3deg] hover:rotate-3">
             Welcome visitor :)
           </div>
           <div className="bg-blue-100 p-3 rounded shadow rotate-[2deg]">
@@ -46,30 +46,39 @@ const Hero = () => {
       </div>
 
       {/* Buttons Section (instead of shelf) */}
-      <div className="w-full pl-50 flex gap-6 mt-12 z-10 ">
-        <button className="bg-transparent border-1 text-black font-semibold px-6 py-3 rounded-lg shadow rotate-[-2deg] transition-transform transform hover:scale-105">
-          View Projects
-        </button>
-        <button className="bg-transparent border-1 text-black font-semibold px-6 py-3 rounded-lg shadow rotate-[1.5deg] transition-transform transform hover:scale-105">
-          Contact Me
-        </button>
-        
-      </div>
-       {/* Resume Image - Full Width Overlap */}
-<div className="absolute bottom-40 mr-18 mb-20 flex justify-center z-20 group cursor-pointer">
-  <div className="relative">
-    <img
-      src="/img/resume.png" // <-- Replace with your resume preview image
-      alt="Resume"
-      className="w-30 h-45 object-cover  hover:scale-105 transition"
-      onClick={() => window.open("/resume.pdf", "_blank")} // <-- your resume.pdf
-    />
-    {/* Hover Box */}
-    <div className="absolute bottom-0 left-0 w-full bg-transparent bg-opacity-70 text-black text-center py-1 opacity-0 group-hover:opacity-100 transition">
-      Resume
-    </div>
+      <div className="w-full flex flex-col lg:flex-row md:flex-col gap-6 mt-12 z-10 relative items-center md:items-start">
+  {/* Buttons */}
+  <div className="flex gap-6 md:ml-50 sm:ml-0">
+    <button className="bg-transparent border text-black font-semibold px-6 py-3 rounded-lg shadow rotate-[-3deg] transition-transform hover:rotate-1">
+      View Projects →
+    </button>
+    <button className="bg-transparent border text-black font-semibold px-6 py-3 rounded-lg shadow rotate-[1.5deg] transition-transform hover:scale-105">
+      Contact Me
+    </button>
+  </div>
+
+  {/* Resume Image */}
+  <div className="relative group md:translate-x-16 md:-translate-y-4 md:-mt-10">
+  <img
+    src="/img/Resumeq.png"
+    alt="Resume"
+    className="w-24 sm:w-28 md:w-32 h-auto object-contain hover:scale-105 transition cursor-pointer"
+    onClick={() => window.open("/resume.pdf", "_blank")}
+  />
+  {/* Hover Label */}
+  <div className="absolute -bottom-5 left-0 w-full text-black  text-xs md:text-lg text-center  opacity-0 group-hover:opacity-100 transition">
+    Resume
+  </div>
+
+    {/* <div className="absolute top-5 -right-3 flex flex-col opacity-0 group-hover:opacity-100 transition duration-500">
+    <span className="w-4 h-2 bg-gray-900 rounded-full "></span>
+    <span className="w-2 h-2 mt-2 ml-1 bg-gray-900 rounded-full "></span>
+    <span className="w-4 h-2 mt-4 ml-1 rotate-45 bg-gray-900 rounded-full "></span>
+  </div> */}
   </div>
 </div>
+
+      {/* Resume Image - Full Width Overlap */}
 
     </div>
   );

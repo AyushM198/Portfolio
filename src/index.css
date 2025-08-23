@@ -21,7 +21,8 @@ html, body {
   --font-Triodion: "Triodion", sans-serif; 
   --font-Iceberg: "Iceberg", sans-serif;
   --font-Sansation: "Sansation", sans-serif;
-  --fony-HennyPenny: "Henny Penny", system-ui;
+  --font-HennyPenny: "Henny Penny", system-ui;
+  --font-PatrickHand: "Patrick Hand", cursive;
 }
 .henny-penny-regular {
   font-family: "Henny Penny", system-ui;

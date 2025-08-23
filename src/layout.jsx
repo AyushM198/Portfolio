@@ -7,7 +7,7 @@ const Layout = () => {
     return (
         <>
 
-            <Navbar heroRef={heroRef} />
+            {/* <Navbar heroRef={heroRef} /> */}
             <main className="">
                 <Outlet context={{ heroRef }} />
             </main>
