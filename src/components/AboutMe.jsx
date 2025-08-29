@@ -27,7 +27,7 @@ const AboutPage = () => {
 
   return (
     <section
-      className="min-h-screen bg-[#f7f6f4] flex flex-col items-center pt-32 px-6 md:px-12 text-center lg:p-35"
+      className="min-h-screen bg-[#f7f6f4] flex flex-col items-center lg:pt-32  md:px-12 text-center lg:p-5 pb-5 "
       style={{ fontFamily: "'Inter', sans-serif" }}
     >
       {/* Title */}
