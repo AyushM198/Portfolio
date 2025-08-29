@@ -41,41 +41,45 @@ export default function Services() {
 ];
 
   return (
-    <section className="lg:h-dvh  text-black py-20 px-6 md:px-12"
-    style={{
-        backgroundImage: "url('/img/paper_bg.png')",
-        backgroundSize: "cover",
-        backgroundRepeat: "repeat",
+   <section
+  className="text-black py-20 px-6 md:px-12 lg:py-24 relative z-20"
+  style={{
+    backgroundImage: "url('/img/paper_bg.png')",
+    backgroundSize: "cover",
+    backgroundRepeat: "repeat",
+  }}
+>
+  {/* Heading */}
+  <div className="text-center max-w-3xl mx-auto mb-16">
+    <h2 className="md:text-[80px] text-5xl mb-6 font-PatrickHand">
+      Services I Provide
+    </h2>
+    <p className="text-gray-500 text-base md:text-2xl">
+      Exploring the intersection of AI and web design to turn concepts into powerful, user-driven experiences.
+    </p>
+  </div>
 
-      }}>
-      {/* Heading */}
-      <div className="text-center max-w-3xl mx-auto mb-20 -mt-10">
-        <h2 className="md:text-[80px] text-5xl mb-4 font-PatrickHand">Services I Provide</h2>
-        <p className="text-gray-500 text-base md:text-2xl  ">
-          Exploring the intersection of AI and web design to turn concepts into powerful, user-driven experiences.
+  {/* Services Grid */}
+  <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:px-12">
+    {services.map((service, index) => (
+      <div
+        key={index}
+        className="bg-black/5 p-8 rounded-xl shadow-xl text-center flex flex-col hover:scale-105 hover:shadow-2xl transition-transform duration-300 ease-in-out hover:bg-black/10"
+      >
+        {service.icon}
+        <h3 className="text-3xl font-semibold mb-4">{service.title}</h3>
+        <p className="text-gray-700 text-lg leading-relaxed mb-6">
+          {service.description}
         </p>
+        <ul className="text-black font-semibold text-sm space-y-2">
+          {service.points.map((point, i) => (
+            <li key={i}>• {point}</li>
+          ))}
+        </ul>
       </div>
+    ))}
+  </div>
+</section>
 
-      {/* Services Grid */}
-      <div className="grid gap-8 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 lg:h-[520px] lg:px-12 ">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="bg-black/4  p-8 rounded-xl shadow-xl text-center flex flex-col hover:scale-102 hover:shadow-2xl transition-transform duration-300 ease-in-out hover:bg-black/8"
-          >
-            {service.icon}
-            <h3 className="text-3xl font-semibold mb-4">{service.title}</h3>
-            <p className="text-gray-700 text-lg text leading-relaxed mb-6">
-              {service.description}
-            </p>
-            <ul className="text-black font-semibold text-sm space-y-2">
-              {service.points.map((point, i) => (
-                <li key={i}>• {point}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </section>
   );
 }
